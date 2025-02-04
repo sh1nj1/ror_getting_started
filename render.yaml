@@ -14,7 +14,8 @@ services:
       - key: RAILS_ENV
         value: production
 
-  - type: postgres
-    name: store_db
-    ipAllowList: []
+databases:
+  - name: store_db
+    databaseName: store
     plan: free
+    ipAllowList: [] # Only allow internal connections
