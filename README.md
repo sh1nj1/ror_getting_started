@@ -15,16 +15,14 @@ Rails 8.0.1
 
 This application is configured for deployment on Render. To deploy:
 
-1. Push your code to GitHub
-2. Go to [Render Dashboard](https://dashboard.render.com/)
-3. Click "New +" and select "Web Service"
-4. Connect your GitHub repository
-5. Render will automatically detect the configuration from `render.yaml`
-6. Set your `RAILS_MASTER_KEY` in the environment variables
-7. Click "Create Web Service"
+1. [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sh1nj1/ror_getting_started)
+2. You'll need to set the `RAILS_MASTER_KEY` environment variable in Render:
+   - Open your local `config/master.key` file
+   - Copy its contents
+   - In Render, after clicking the deploy button, you'll be prompted to set environment variables
+   - Add `RAILS_MASTER_KEY` and paste your master key value
+
+3. Click "Apply" to start the deployment
 
 Render will automatically create both the web service and the PostgreSQL database as specified in the `render.yaml` configuration.
 
-## Render
-
-- [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sh1nj1/ror_getting_started)
