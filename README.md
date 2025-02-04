@@ -9,7 +9,6 @@ Rails 8.0.1
 
 - [Codes for getting started](getting_started.md)
 - [Deploy to AWS EC2](deploy_to_ec2.md)
-- [Deploy to Render](https://dashboard.render.com/)
 
 ## Deploying to Render
 
