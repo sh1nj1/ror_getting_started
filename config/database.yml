@@ -21,9 +21,25 @@ test:
   database: storage/test.sqlite3
 
 
-production:
+default_production: &default_production
   <<: *default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
+
+production:
+  primary:
+    <<: *default_production
+    url: <%= ENV['DATABASE_URL'] %>
+  cache:
+    <<: *default_production
+    url: <%= ENV['CACHE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *default_production
+    url: <%= ENV['QUEUE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *default_production
+    url: <%= ENV['CABLE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
+    migrations_paths: db/cable_migrate
