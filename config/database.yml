@@ -34,12 +34,9 @@ production:
   cache:
     <<: *default_production
     url: <%= ENV['CACHE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
-    migrations_paths: db/cache_migrate
   queue:
     <<: *default_production
     url: <%= ENV['QUEUE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
-    migrations_paths: db/queue_migrate
   cable:
     <<: *default_production
     url: <%= ENV['CABLE_DATABASE_URL'] || ENV['DATABASE_URL'] %>
-    migrations_paths: db/cable_migrate
