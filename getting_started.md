@@ -76,7 +76,7 @@ For this project, you will need:
 * Rails 8.1.0 or newer
 * A code editor
 
-Follow the [Install Ruby on Rails Guide](install_ruby_on_rails.html) if you need
+Follow the [Install Ruby on Rails Guide](https://guides.rubyonrails.org/install_ruby_on_rails.html) if you need
 to install Ruby and/or Rails.
 
 Let's verify the correct version of Rails is installed. To display the current
@@ -123,7 +123,7 @@ new Rails application. You can open this folder in your code editor or run
 | ----------- | ------- |
 |app/|Contains the controllers, models, views, helpers, mailers, jobs, and assets for your application. **You'll focus mostly on this folder for the remainder of this guide.**|
 |bin/|Contains the `rails` script that starts your app and can contain other scripts you use to set up, update, deploy, or run your application.|
-|config/|Contains configuration for your application's routes, database, and more. This is covered in more detail in [Configuring Rails Applications](configuring.html).|
+|config/|Contains configuration for your application's routes, database, and more. This is covered in more detail in [Configuring Rails Applications](https://guides.rubyonrails.org/configuring.html).|
 |config.ru|[Rack](https://rack.github.io) configuration for Rack-based servers used to start the application.|
 |db/|Contains your current database schema, as well as the database migrations.|
 |Dockerfile|Configuration file for Docker.|
@@ -134,8 +134,8 @@ new Rails application. You can open this folder in your code editor or run
 |Rakefile|This file locates and loads tasks that can be run from the command line. The task definitions are defined throughout the components of Rails. Rather than changing `Rakefile`, you should add your own tasks by adding files to the `lib/tasks` directory of your application.|
 |README.md|This is a brief instruction manual for your application. You should edit this file to tell others what your application does, how to set it up, and so on.|
 |script/|Contains one-off or general purpose [scripts](https://github.com/rails/rails/blob/main/railties/lib/rails/generators/rails/script/USAGE) and [benchmarks](https://github.com/rails/rails/blob/main/railties/lib/rails/generators/rails/benchmark/USAGE).|
-|storage/|Contains SQLite databases and Active Storage files for Disk Service. This is covered in [Active Storage Overview](active_storage_overview.html).|
-|test/|Unit tests, fixtures, and other test apparatus. These are covered in [Testing Rails Applications](testing.html).|
+|storage/|Contains SQLite databases and Active Storage files for Disk Service. This is covered in [Active Storage Overview](https://guides.rubyonrails.org/active_storage_overview.html).|
+|test/|Unit tests, fixtures, and other test apparatus. These are covered in [Testing Rails Applications](https://guides.rubyonrails.org/testing.html).|
 |tmp/|Temporary files (like cache and pid files).|
 |vendor/|A place for all third-party code. In a typical Rails application this includes vendored gems.|
 |.dockerignore|This file tells Docker which files it should not copy into the container.|
@@ -158,8 +158,8 @@ MVC, we have three main concepts where the majority of our code lives:
 * Controller - Handles user interactions and the logic for each request.
 
 <picture class="flowdiagram">
-  <source srcset="images/getting_started/mvc_architecture_dark.jpg" media="(prefers-color-scheme:dark)">
-  <img src="images/getting_started/mvc_architecture_light.jpg">
+  <source srcset="https://guides.rubyonrails.org/images/getting_started/mvc_architecture_dark.jpg" media="(prefers-color-scheme:dark)">
+  <img src="https://guides.rubyonrails.org/images/getting_started/mvc_architecture_light.jpg">
 </picture>
 
 Now that we've got a basic understanding of MVC, let's see how it's used in
@@ -197,7 +197,7 @@ Use Ctrl-C to stop
 To see your Rails application, open http://localhost:3000 in your browser. You
 will see the default Rails welcome page:
 
-![Rails welcome page](images/getting_started/rails_welcome.png)
+![Rails welcome page](https://guides.rubyonrails.org/images/getting_started/rails_welcome.png)
 
 It works!
 
@@ -222,7 +222,7 @@ to require files automatically so you can focus on writing your application
 code.
 
 See
-[Autoloading and Reloading Constants](autoloading_and_reloading_constants.html)
+[Autoloading and Reloading Constants](https://guides.rubyonrails.org/autoloading_and_reloading_constants.html)
 for more details.
 
 Creating a Database Model
@@ -815,7 +815,7 @@ resources :products
 ```
 
 TIP: If you don’t want all these CRUD actions, you specify exactly what you
-need. Check out the [routing guide](routing.html) for details.
+need. Check out the [routing guide](https://guides.rubyonrails.org/routing.html) for details.
 
 ### Routes Command
 
@@ -963,7 +963,7 @@ For example, if you weren't paying attention and typed singular `@product`
 instead of plural `@products`, the debug helper could help you identify that the
 variable was not set correctly in the controller.
 
-TIP: Check out the [Action View Helpers guide](action_view_helpers.html) to see
+TIP: Check out the [Action View Helpers guide](https://guides.rubyonrails.org/action_view_helpers.html) to see
 more helpers that are available.
 
 Let's update `app/views/products/index.html.erb` to render all of our product
@@ -1443,7 +1443,7 @@ Let's create `app/views/products/edit.html.erb` with the following:
 ```
 
 To learn more about view partials, check out the
-[Action View Guide](action_view_overview.html).
+[Action View Guide](https://guides.rubyonrails.org/action_view_overview.html).
 
 ### Deleting Products
 
@@ -1709,7 +1709,7 @@ The cache entry was written by the last request, so Rails finds the cache entry
 on the second request. Rails also changes the cache key when records are updated
 to ensure that it never renders stale cache data.
 
-Learn more in the [Caching with Rails](caching_with_rails.html) guide.
+Learn more in the [Caching with Rails](https://guides.rubyonrails.org/caching_with_rails.html) guide.
 
 Rich Text Fields with Action Text
 ---------------------------------
@@ -1784,7 +1784,7 @@ Create a new product and add a description with bold and italic text. You'll see
 that the show page displays the formatted text and editing the product retains
 this rich text in the text area.
 
-Check out the [Action Text Overview](action_text_overview.html) to learn more.
+Check out the [Action Text Overview](https://guides.rubyonrails.org/action_text_overview.html) to learn more.
 
 File Uploads with Active Storage
 --------------------------------
@@ -1845,7 +1845,7 @@ Lastly, we want to display the featured image for our product in
 Try uploading an image for a product and you'll see the image displayed on the
 show page after saving.
 
-Check out the [Active Storage Overview](active_storage_overview.html) for more
+Check out the [Active Storage Overview](https://guides.rubyonrails.org/active_storage_overview.html) for more
 details.
 
 Internationalization (I18n)
@@ -1946,7 +1946,7 @@ es:
 You'll now see "Products" when viewing the English locale and "Productos" when
 viewing the Spanish locale.
 
-Learn more about the [Rails Internationalization (I18n) API](i18n.html).
+Learn more about the [Rails Internationalization (I18n) API](https://guides.rubyonrails.org/i18n.html).
 
 Adding In Stock Notifications
 -----------------------------
@@ -2434,7 +2434,7 @@ Rails' asset pipeline is called Propshaft. It takes your CSS, JavaScript,
 images, and other assets and serves them to your browser. In production,
 Propshaft keeps track of each version of your assets so they can be cached to
 make your pages faster. Check out the
-[Asset Pipeline guide](asset_pipeline.html) to learn more about how this works.
+[Asset Pipeline guide](https://guides.rubyonrails.org/asset_pipeline.html) to learn more about how this works.
 
 Let's modify `app/assets/stylesheets/application.css` and change our font to
 sans-serif.
@@ -2555,8 +2555,8 @@ We haven't written any JavaScript yet, but we have been using Hotwire on the
 frontend. For instance, the form you created to add and edit a product was
 powered by Turbo.
 
-Learn more in the [Asset Pipeline](asset_pipeline.html) and
-[Working with JavaScript in Rails](working_with_javascript_in_rails.html)
+Learn more in the [Asset Pipeline](https://guides.rubyonrails.org/asset_pipeline.html) and
+[Working with JavaScript in Rails](https://guides.rubyonrails.org/working_with_javascript_in_rails.html)
 guides.
 
 Testing
@@ -2700,7 +2700,7 @@ Finished in 0.665856s, 3.0037 runs/s, 10.5128 assertions/s.
 You can use this as a starting place to continue building out a test suite with
 full coverage of the application features.
 
-Learn more about [Testing Rails Applications](testing.html)
+Learn more about [Testing Rails Applications](https://guides.rubyonrails.org/testing.html)
 
 Consistently Formatted Code with RuboCop
 ----------------------------------------
@@ -2757,7 +2757,7 @@ Security Warnings: 0
 No warnings found
 ```
 
-Learn more about [Securing Rails Applications](security.html)
+Learn more about [Securing Rails Applications](https://guides.rubyonrails.org/security.html)
 
 Continuous Integration with GitHub Actions
 ------------------------------------------
@@ -2904,8 +2904,8 @@ automatically retried if they fail to send, and jobs are kept safe in the
 database during restarts.
 
 <picture class="flowdiagram">
-  <source srcset="images/getting_started/background_jobs_dark.jpg" media="(prefers-color-scheme:dark)">
-  <img src="images/getting_started/background_jobs_light.jpg">
+  <source srcset="https://guides.rubyonrails.org/images/getting_started/background_jobs_dark.jpg" media="(prefers-color-scheme:dark)">
+  <img src="https://guides.rubyonrails.org/images/getting_started/background_jobs_light.jpg">
 </picture>
 
 What's Next?
@@ -2925,11 +2925,11 @@ Here are some ideas:
 
 We also recommend learning more by reading other Ruby on Rails Guides:
 
-* [Active Record Basics](active_record_basics.html)
-* [Layouts and Rendering in Rails](layouts_and_rendering.html)
-* [Testing Rails Applications](testing.html)
-* [Debugging Rails Applications](debugging_rails_applications.html)
-* [Securing Rails Applications](security.html)
+* [Active Record Basics](https://guides.rubyonrails.org/active_record_basics.html)
+* [Layouts and Rendering in Rails](https://guides.rubyonrails.org/layouts_and_rendering.html)
+* [Testing Rails Applications](https://guides.rubyonrails.org/testing.html)
+* [Debugging Rails Applications](https://guides.rubyonrails.org/debugging_rails_applications.html)
+* [Securing Rails Applications](https://guides.rubyonrails.org/security.html)
 
 
 Happy building!
