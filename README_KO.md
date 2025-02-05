@@ -2,7 +2,7 @@
 
 [🇰🇷 (한국어)](./README_KO.md) | [🇬🇧 (English)](./README.md)
 
-이것은 Ruby on Rails 시작 문서를 위한 작동 코드입니다.
+이것은 [Ruby on Rails 시작 문서](getting_started_ko.md)를 위한 작동 코드입니다.
 
 런타임 버전 정보:
 
@@ -13,7 +13,8 @@ store % rails -v
 Rails 8.0.1
 ```
 
-- [시작하기 복사본](getting_started_ko.md)
+## AWS EC2에 배포
+
 - [AWS EC2에 배포하기](deploy_to_ec2.md)
 
 ## Render에 배포

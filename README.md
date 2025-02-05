@@ -2,7 +2,7 @@
 
 [🇰🇷 (한국어)](./README_KO.md) | [🇬🇧 (English)](./README.md)
 
-This is working codes for Ruby on Rails getting started document.
+This is working codes for [Ruby on Rails getting started document](getting_started.md).
 
 Runtime version info:
 
@@ -13,7 +13,8 @@ store % rails -v
 Rails 8.0.1
 ```
 
-- [Copy of getting started](getting_started.md)
+## Deploy to AWS EC2
+
 - [Deploy to AWS EC2](deploy_to_ec2.md)
 
 ## Deploying to Render
