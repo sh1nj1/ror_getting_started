@@ -13,6 +13,12 @@ store % rails -v
 Rails 8.0.1
 ```
 
+## Getting Started
+
+* `bin/rails db:migrate` - 데이터베이스 마이그레이션 실행 (기본적으로 sqlite3 사용)
+* `bin/rails db:seed` - 데이터베이스에 시드 데이터 삽입 (db/seeds.rb의 데이터)
+* `bin/rails server` - Rails 서버 시작
+
 ## AWS EC2에 배포
 
 - [AWS EC2에 배포하기](deploy_to_ec2.md)
