@@ -15,6 +15,7 @@ Rails 8.0.1
 
 ## Getting Started
 
+* `bin/rails credentials:edit` - Create or edit the `config/credentials.yml.enc` file and `config/master.key` file.
 * `bin/rails db:prepare` - Run database migrations (default to use sqlite3)
 * `bin/rails server` - Start the Rails server
 

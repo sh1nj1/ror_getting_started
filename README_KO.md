@@ -15,6 +15,7 @@ Rails 8.0.1
 
 ## Getting Started
 
+* `bin/rails credentials:edit` - 생성 `config/credentials.yml.enc`, `config/master.key` 파일.
 * `bin/rails db:prepare` - 데이터베이스 마이그레이션 실행 (기본적으로 sqlite3 사용)
 * `bin/rails server` - Rails 서버 시작
 
