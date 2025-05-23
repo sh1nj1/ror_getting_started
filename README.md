@@ -15,8 +15,7 @@ Rails 8.0.1
 
 ## Getting Started
 
-* `bin/rails db:migrate` - Run database migrations (default to use sqlite3)
-* `bin/rails db:seed` - Insert seed data into the database (data in db/seeds.rb)
+* `bin/rails db:prepare` - Run database migrations (default to use sqlite3)
 * `bin/rails server` - Start the Rails server
 
 ## Deploy to AWS EC2
